@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CoinGecko Dynamic Token Widget</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="widget-container">
+    <form id="tokenForm">
+        <label for="tokenID">Token Name:</label>
+        <input type="text" id="tokenID" name="tokenID" required>
+
+        <label for="currency">Currency:</label>
+        <select id="currency" name="currency" required></select>
+
+        <div>
+            <input type="checkbox" id="includeMarketCap" name="includeMarketCap">
+            <label for="includeMarketCap">Include Market Cap</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="include24hrVol" name="include24hrVol">
+            <label for="include24hrVol">Include 24hr Vol</label>
+        </div>
+
+        <button type="submit">Get Token Details</button>
+    </form>
+    <div id="tokenDetails"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
